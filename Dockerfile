@@ -37,4 +37,4 @@ EXPOSE 8000
 VOLUME ["/data", "/config"]
 
 # Start MeshChat
-CMD ["python3", "meshchat.py", "--host", "0.0.0.0"]
+CMD ["python3", "meshchat.py", "--host", "0.0.0.0", "--reticulum-config-dir", "/config", "--storage-dir", "/data"]
